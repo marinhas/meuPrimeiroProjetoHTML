@@ -1,32 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-    form {
-        text-align: center;
-    }
-</style>
+    <title>Formulário de Login</title>
+    <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
-    <form action="">
-     <h1>Cadastro</h1>
+    <form action="home.html" method="get">
 
-     <label for="nome">Nome:</label> <br>
-     <input name="nome" type="text" placeholder="Nome Completo" required> <br><br>
+            <fieldset>
 
-     <label for="emailpessoa">Email:</label> <br>
-     <input name="emailpessoa" type="text" placeholder="Email Completo" required> <br><br>
+                <legend>Login</legend>
 
-     <label for="senha">Senha:</label> <br>
-     <input name="senha" type="text" placeholder="Senha" required> <br><br>
+                <label for="nomePessoa">Nome Completo::</label><br>
+                <input type="text" name="nomePessoa"><br><br>
 
-     <label for="confirmarsenha">Confirmar senha:</label> <br>
-     <input name="confirmarsenha" type="text" placeholder="Confirmação de Senha" required> <br><br>
+                <label for="emailPessoa">Senha:</label><br>
+                <input type="email" name="emailPessoa"><br><br>
 
-     <input name="btcadastrar" type="submit" value="Cadastrar"
-     </form>
+                <label for="senhaPessoa">Senha:</label><br>
+                <input type="password" name="senhaPessoa"required><br><br>
+
+                <label for="perfilPessoa">Perfil:</label><br>
+                <select name="perfilPessoa" required>
+                    <option value="Professor"></option>
+                    <option value="Jogador"></option>
+                    <option value="Administrador"></option>
+                </select>
+
+                <button type="submit">Cadastrar</button>
+                <button type="submit">Voltar</button>
+                
+                <input type="submit"name="btLogin" value="Login"> <br><br>
+
+            </fieldset>
+            
+    </form>           
 </body>
-</html>
